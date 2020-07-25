@@ -5,8 +5,8 @@ namespace :dev do
       show_spinner("Deleting the database...") { %x(rails db:drop) }
       show_spinner("Creating the database...") {  %x(rails db:create) }
       show_spinner("Migrating the tables...") { %x(rails db:migrate) }
-      %x(rails dev:add_coins)
       %x(rails dev:add_mining_types)
+      %x(rails dev:add_coins)
     else
       puts "Vocẽ não está em ambiente de devenvovimento."
     end
@@ -19,27 +19,32 @@ namespace :dev do
                 {
                   description: "Bitcoin",
                   acronym: "BTC",
-                  url_image: "https://cdn.xbinop.com/br/wp-content/uploads/sites/8/2017/12/bitcoin.png"
+                  url_image: "https://cdn.xbinop.com/br/wp-content/uploads/sites/8/2017/12/bitcoin.png",
+                  mining_type: MiningType.find_by(acronym: 'PoW')
                 },
                 {
                   description: "Ethereum",
                   acronym: "ETH",
-                  url_image: "https://foxbit.com.br/wp-content/uploads/2019/01/Ethereum-01.png"
+                  url_image: "https://foxbit.com.br/wp-content/uploads/2019/01/Ethereum-01.png",
+                  mining_type: MiningType.all.sample
                 },
                 {
                   description: "Dash",
                   acronym: "DASH",
-                  url_image: "https://s2.coinmarketcap.com/static/img/coins/200x200/660.png"
+                  url_image: "https://s2.coinmarketcap.com/static/img/coins/200x200/660.png",
+                  mining_type: MiningType.all.sample
                 },
                 {
                   description: "Iota",
                   acronym: "IOT",
-                  url_image: "https://www.coinstaker.com/wp-content/uploads/2018/01/iota-cryptocurrency-logo-1.png"
+                  url_image: "https://www.coinstaker.com/wp-content/uploads/2018/01/iota-cryptocurrency-logo-1.png",
+                  mining_type: MiningType.all.sample
                 },
                 {
                   description: "Zcash",
                   acronym: "ZEC",
-                  url_image: "https://z.cash/wp-content/uploads/2018/10/zcash-logo-fullcolor-512sq.png"
+                  url_image: "https://z.cash/wp-content/uploads/2018/10/zcash-logo-fullcolor-512sq.png",
+                  mining_type: MiningType.all.sample
                 }
               ]
     
