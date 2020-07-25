@@ -23,7 +23,17 @@ coins = [
             description: "Dash",
             acronym: "DASH",
             url_image: "https://s2.coinmarketcap.com/static/img/coins/200x200/660.png"
-          },    
+          },
+          {
+            description: "Iota",
+            acronym: "IOT",
+            url_image: "https://www.coinstaker.com/wp-content/uploads/2018/01/iota-cryptocurrency-logo-1.png"
+          },
+          {
+            description: "Zcash",
+            acronym: "ZEC",
+            url_image: "https://z.cash/wp-content/uploads/2018/10/zcash-logo-fullcolor-512sq.png"
+          },
         ]
 
 coins.each do |coin|
