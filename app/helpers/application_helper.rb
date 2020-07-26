@@ -1,5 +1,5 @@
 module ApplicationHelper
-  def what_locale(locale)
+  def what_locale
     I18n.locale == :en ? 'Inglês!' : 'Português!'
   end
 
