@@ -1,6 +1,11 @@
-<h1>Seja Bem-vindo!</h1>
+<h1>
+  <%= t('activerecord.attributes.attribute_commons.helcome') %>
+</h1>
 
-<p>O idiona utilizado nessa aplicação é: <strong><%= what_locale %></strong></p>
+<p>
+  <%= t('activerecord.attributes.attribute_commons.language_used') %>:
+  <strong><%= t('actual_lacale') %>!</strong>
+</p>
 
 <p><strong>Data:</strong> <%= l(Date.today) %></p>
 

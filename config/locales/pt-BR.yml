@@ -23,6 +23,8 @@ pt-BR:
         back: Voltar
         new_coin: Nova Moeda
         new_mining_type: Novo Tipo de Mineração
+        helcome: Sejá Bem Vindo!
+        language_used: O idioma utilizado nessa aplicação é
 
       coin:
         <<: *commons
@@ -35,3 +37,5 @@ pt-BR:
 
 
   hello: Olá Mundo!
+
+  actual_lacale: Português
