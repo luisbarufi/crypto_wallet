@@ -1,8 +1,10 @@
 <h1>Seja Bem-vindo!</h1>
 
-<p>O idiona utilizado nessa aplicação é: <strong><%= what_locale(I18n.locale) %></strong></p>
+<p>O idiona utilizado nessa aplicação é: <strong><%= what_locale %></strong></p>
 
-<p><strong>Data:</strong> <%= Date.today %></p>
+<p><strong>Data:</strong> <%= l(Date.today) %></p>
+
+<p><%= t('hello')%></p>
 
 <%= render "menu" %>
 
