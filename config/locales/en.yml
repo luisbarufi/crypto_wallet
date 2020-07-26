@@ -30,9 +30,44 @@
 # available at https://guides.rubyonrails.org/i18n.html.
 
 en:
-  hello: "Hello world"
+  activerecord:
+    models:
+      coin:
+        one: Coin
+        other: Coins
 
-  links:
-    show: "Show"
-    edit: "Edit"
-    destroy: "Destroy"
+      mining_type: 
+        one: Mining Type
+        other: Mining Types
+
+    attributes:
+      attribute_commons: &commons
+        id: Code
+        description: Description
+        acronym: Acronym
+        updated_at: Updated
+        created_at: Created
+        show: Show
+        edit: Edit
+        destroy: Delete
+        home: Home
+        back: Back
+        new_coin: New Coin
+        new_mining_type: New Mining Type
+        helcome: Welcome!
+        language_used: The language used in this application is
+
+      coin:
+        <<: *commons
+        url_image: Image
+        mining_type: Mining Type
+        mining_type_id: Mining Type
+        
+      mining_type:
+        <<: *commons
+
+
+  hello: Hello World!
+
+  actual_lacale: English
+
