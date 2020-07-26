@@ -1,7 +1,37 @@
 pt-BR:
-  hello: "Olá Mundo!"
+  activerecord:
+    models:
+      coin:
+        one: Moeda
+        other: Moedas
 
-  links:
-    show: "Mostrar"
-    edit: "Editar"
-    destroy: "Apagar"
+      mining_type: 
+        one: Tipo de Mineração
+        other: Tipos de Mineração
+
+    attributes:
+      attribute_commons: &commons
+        id: Código
+        description: Descrição
+        acronym: Sigla
+        updated_at: Atualizado em
+        created_at: Data da Criação
+        show: Mostrar
+        edit: Editar
+        destroy: Apagar
+        home: Página Inicial
+        back: Voltar
+        new_coin: Nova Moeda
+        new_mining_type: Novo Tipo de Mineração
+
+      coin:
+        <<: *commons
+        url_image: Imagem
+        mining_type: Tipo de Mineração
+        mining_type_id: Tipo de Mineração
+        
+      mining_type:
+        <<: *commons
+
+
+  hello: Olá Mundo!

@@ -1,12 +1,12 @@
 <p id="notice"><%= notice %></p>
 
-<h1>Mining Types</h1>
+<h1> <%= t('activerecord.models.mining_type.other') %> </h1>
 
 <table>
   <thead>
     <tr>
-      <th>Description</th>
-      <th>Acronym</th>
+      <th> <%= t('activerecord.attributes.mining_type.description') %> </th>
+      <th> <%= t('activerecord.attributes.mining_type.acronym') %> </th>
       <th colspan="3"></th>
     </tr>
   </thead>
@@ -16,9 +16,9 @@
       <tr>
         <td><%= mining_type.description %></td>
         <td><%= mining_type.acronym %></td>
-        <td><%= link_to t('links.show'), mining_type %></td>
-        <td><%= link_to t('links.edit'), edit_mining_type_path(mining_type) %></td>
-        <td><%= link_to t('links.destroy'), mining_type, method: :delete, data: { confirm: 'Are you sure?' } %></td>
+        <td><%= link_to t('activerecord.attributes.mining_type.show'), mining_type %></td>
+        <td><%= link_to t('activerecord.attributes.mining_type.edit'), edit_mining_type_path(mining_type) %></td>
+        <td><%= link_to t('activerecord.attributes.mining_type.destroy'), mining_type, method: :delete, data: { confirm: 'Are you sure?' } %></td>
       </tr>
     <% end %>
   </tbody>
@@ -26,4 +26,5 @@
 
 <br>
 
-<%= link_to 'New Mining Type', new_mining_type_path %>
+<%= link_to "#{t('activerecord.attributes.mining_type.new_mining_type')}", new_mining_type_path %> |
+<%= link_to "#{t('activerecord.attributes.mining_type.home')}", root_path %>
