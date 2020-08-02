@@ -16,14 +16,17 @@
     <div class="container-fluid">
 
       <ul class="nav justify-content-end">
-
         <li class="nav-item">
-          <%= link_to "Português", root_path(locale: "pt-BR"), class: "nav-link" %>
+          <%= link_to "#{t('activerecord.attributes.mining_type.home')}", root_path, class: "nav-link" %>
         </li>
         <li class="nav-item">
-          <%= link_to "English", root_path(locale: "en"), class: "nav-link" %>
+          <%#= link_to "#{t('portuguese')}", root_path(locale: "pt-BR"), class: "nav-link" %>
+          <a class="nav-link" href="<%= request.path %>?locale=pt-BR"><%= t('portuguese') %></a>
         </li>
-
+        <li class="nav-item">
+          <%#= link_to "#{t('english')}", root_path(locale: "en"), class: "nav-link" %>
+          <a class="nav-link" href="<%= request.path %>?locale=en"><%= t('english') %></a>
+        </li>
       </ul>
 
       <%= yield %>
