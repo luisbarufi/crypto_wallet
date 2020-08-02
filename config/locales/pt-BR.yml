@@ -24,7 +24,6 @@ pt-BR:
         new_coin: Nova Moeda
         new_mining_type: Novo Tipo de Mineração
         helcome: Sejá Bem Vindo!
-        language_used: O idioma utilizado nessa aplicação é
 
       coin:
         <<: *commons
@@ -35,7 +34,5 @@ pt-BR:
       mining_type:
         <<: *commons
 
-
-  hello: Olá Mundo!
-
-  actual_lacale: Português
+  presentation_text: Este é o Crypto Wallet, um app para cadastrar e acompanhar suas cryptomoedas.
+  instruction_text: Para começar selecione umas das opções abaixo
