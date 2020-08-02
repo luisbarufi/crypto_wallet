@@ -1,4 +1,5 @@
 @import "toastify-js/src/toastify.css";
+@import "bootstrap";
 
 @import "./coins.css";
 @import "./mining_types.css";
