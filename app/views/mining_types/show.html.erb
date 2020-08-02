@@ -1,12 +1,12 @@
 <form>
   <div class="form-group">
     <%= label_tag nil, t('activerecord.attributes.mining_type.description')  %>:
-    <%= text_field_tag nil, @mining_type.description, class: "form-control" %>
+    <%= text_field_tag nil, @mining_type.description, class: "form-control", disabled: true %>
   </div>
 
   <div class="form-group">
     <%= label_tag nil, t('activerecord.attributes.mining_type.acronym') %>:
-    <%= text_field_tag nil, @mining_type.acronym, class: "form-control" %>
+    <%= text_field_tag nil, @mining_type.acronym, class: "form-control", disabled: true %>
   </div>
 </form>
 

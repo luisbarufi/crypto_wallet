@@ -1,21 +1,21 @@
 <form>
   <div class="form-group">
     <%= label_tag nil, t('activerecord.attributes.coin.description') %>:
-    <%= text_field_tag nil, @coin.description, class: "form-control" %>
+    <%= text_field_tag nil, @coin.description, class: "form-control", disabled: true %>
   </div>
 
   <div class="form-group">
     <%= label_tag nil,  t('activerecord.attributes.coin.acronym') %>:
-    <%= text_field_tag nil, @coin.acronym, class: "form-control" %>
+    <%= text_field_tag nil, @coin.acronym, class: "form-control", disabled: true %>
   </div>
 
   <div class="form-group">
     <%= label_tag nil, t('activerecord.attributes.coin.url_image') %>:
-    <%= text_field_tag nil, @coin.url_image, class: "form-control" %>
+    <%= text_field_tag nil, @coin.url_image, class: "form-control", disabled: true %>
   </div>
 
   <div class="form-group">
-    <%= label_tag nil, t('activerecord.attributes.coin.mining_type') %>:
+    <%= label_tag nil, t('activerecord.attributes.coin.mining_type'), disabled: true %>:
     <%= text_field_tag nil, @coin.mining_type.description, class: "form-control" %>
   </div>
 </form>
