@@ -1,6 +1,6 @@
 <p id="notice"><%= notice %></p>
 
-<h1> <%= t('activerecord.models.mining_type.other') %> </h1>
+<h1> <%= MiningType.model_name.human(count: @mining_types.count) %> </h1>
 
 <table class="table table-hover">
   <thead>
@@ -26,5 +26,5 @@
 
 <br>
 
-<%= link_to "#{t('activerecord.attributes.mining_type.new_mining_type')}", new_mining_type_path %> |
-<%= link_to "#{t('activerecord.attributes.mining_type.home')}", root_path %>
+<%= link_to "#{t('activerecord.attributes.mining_type.new_mining_type')}", new_mining_type_path, class: "btn btn-primary" %>
+<%= link_to "#{t('activerecord.attributes.mining_type.home')}", root_path, class: "btn btn-primary" %>
