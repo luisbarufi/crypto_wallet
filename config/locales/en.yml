@@ -39,7 +39,13 @@ en:
   presentation_text: This is Crypto Wallet, an app to register and track your cryptocurrencies.
   instruction_text: To get started select one of the options below
   are_you_sure: Are you sure?
+  
   coin_was_successfully_created: Coin was successfully created
   coin_was_successfully_updated: Coin was successfully updated
-  Coin_was_successfully_destroyed: Coin was successfully destroyed
+  coin_was_successfully_destroyed: Coin was successfully destroyed
+
+  mining_type_was_successfully_created: Mining type was successfully created
+  mining_type_was_successfully_updated: Mining type was successfully updated
+  mining_type_was_successfully_destroyed: Mining type was successfully destroyed
+
   

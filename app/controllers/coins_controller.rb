@@ -59,7 +59,7 @@ class CoinsController < ApplicationController
   def destroy
     @coin.destroy
     respond_to do |format|
-      format.html { redirect_to coins_url, notice: "#{t('Coin_was_successfully_destroyed')}." }
+      format.html { redirect_to coins_url, notice: "#{t('coin_was_successfully_destroyed')}." }
       format.json { head :no_content }
     end
   end

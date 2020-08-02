@@ -39,6 +39,12 @@ pt-BR:
   presentation_text: Este é o Crypto Wallet, um app para cadastrar e acompanhar suas cryptomoedas.
   instruction_text: Para começar selecione umas das opções abaixo
   are_you_sure: Você tem certeza?
+  
   coin_was_successfully_created: A moeda foi criada com sucesso
   coin_was_successfully_updated: A moeda foi atualizada com sucesso
-  Coin_was_successfully_destroyed: Moeda foi deletada com sucesso
+  coin_was_successfully_destroyed: Moeda foi deletada com sucesso
+
+  mining_type_was_successfully_created: O tipo de mineração foi criado com sucesso
+  mining_type_was_successfully_updated: O tipo de mineração foi atualizado com sucesso
+  mining_type_was_successfully_destroyed: O tipo de mineração foi deletado com sucesso
+
