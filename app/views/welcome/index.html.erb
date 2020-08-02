@@ -1,25 +1,11 @@
-<p>
-  <%= link_to "Português", root_path(locale: "pt-BR") %> | 
-  <%= link_to "English", root_path(locale: "en") %>
-</p>
 
-<h1>
-  <%= t('activerecord.attributes.attribute_commons.helcome') %>
-</h1>
-
-<p>
-  <%= t('activerecord.attributes.attribute_commons.language_used') %>:
-  <strong><%= t('actual_lacale') %>!</strong>
-</p>
+<div class="jumbotron">
+  <h1 class="display-4"><%= t('activerecord.attributes.attribute_commons.helcome') %></h1>
+  <p class="lead">Este é o Crypto Wallet, um app para cadastrar e acompanhar suas cryptomoedas.</p>
+  <hr class="my-4">
+  <p>Para começar selecione umas das opções abaixo:</p>
+  <%= link_to "#{t('activerecord.models.coin.other')}", coins_path, class: "btn btn-primary btn-lg" %>
+  <%= link_to "#{t('activerecord.models.mining_type.other')}", mining_types_path, class: "btn btn-primary btn-lg" %>
+</div>
 
 <p><strong>Data:</strong> <%= l(Date.today) %></p>
-
-<p><%= t('hello')%></p>
-
-<%= render "menu" %>
-
-<p>Você está em embiente de <strong><%= environment_rails %>!</strong></p>
-
-<p>Eu sou uma variável de instância/sessão <strong><%= @name %></strong></p>
-
-<p>Meu curso é o curos de <strong><%= @course %></strong></p>
