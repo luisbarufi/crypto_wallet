@@ -24,15 +24,17 @@ en:
         new_coin: New Coin
         new_mining_type: New Mining Type
         helcome: Welcome!
-
-      coin:
-        <<: *commons
-        url_image: Image
-        mining_type: Mining Type
-        mining_type_id: Mining Type
+        
+        coin:
+          <<: *commons
+          url_image: Image
+          mining_type: Mining Type
+          mining_type_id: Mining Type
+          editing_coin: Editing Coin
         
       mining_type:
         <<: *commons
+        editing_mining_type: Editing Mining Type
 
   presentation_text: This is Crypto Wallet, an app to register and track your cryptocurrencies.
   instruction_text: To get started select one of the options below
