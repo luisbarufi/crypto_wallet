@@ -1,5 +1,9 @@
-<h1><%= t('activerecord.attributes.coin.new_coin') %></h1>
-
-<%= render 'form', coin: @coin %>
-
-<%= link_to "#{t('activerecord.attributes.coin.back')}", coins_path, class: "btn btn-primary" %>
+<div class="card">
+  <div class="card-header">
+    <h1><%= t('activerecord.attributes.coin.new_coin') %></h1>  
+  </div>
+    <%= render 'form', coin: @coin %>
+  <div class="card-footer">
+    <%= link_to "#{t('activerecord.attributes.coin.back')}", coins_path, class: "btn btn-primary" %>
+  </div>
+</div>

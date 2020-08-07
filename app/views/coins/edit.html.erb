@@ -1,6 +1,10 @@
-<h1><%= t("activerecord.attributes.coin.editing_coin") %></h1>
-
-<%= render 'form', coin: @coin %>
-
-<%= link_to "#{t('activerecord.attributes.attribute_commons.show')}", @coin, class: "btn btn-primary" %>
-<%= link_to "#{t('activerecord.attributes.attribute_commons.back')}", coins_path, class: "btn btn-primary" %>
+<div class="card">
+  <div class="card-header">
+    <h1><%= t("activerecord.attributes.coin.editing_coin") %></h1>
+  </div>
+    <%= render 'form', coin: @coin %>
+  <div class="card-footer">
+    <%= link_to "#{t('activerecord.attributes.attribute_commons.show')}", @coin, class: "btn btn-primary" %>
+    <%= link_to "#{t('activerecord.attributes.attribute_commons.back')}", coins_path, class: "btn btn-primary" %>
+  </div>
+</div>
