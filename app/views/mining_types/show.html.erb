@@ -1,14 +1,23 @@
-<form>
-  <div class="form-group">
-    <%= label_tag nil, t('activerecord.attributes.mining_type.description')  %>:
-    <%= text_field_tag nil, @mining_type.description, class: "form-control", disabled: true %>
-  </div>
+<div class="container-fluid">
+  <div class="card">
+    <div class="card-header">
+      <h1><%= t('activerecord.models.mining_type.one') %></h1>
+    </div>
+    <div class="card-body">
+      <div>
+        <strong><%= t('activerecord.attributes.mining_type.description')  %>:</strong>
+        <%= @mining_type.description %>
+      </div>
 
-  <div class="form-group">
-    <%= label_tag nil, t('activerecord.attributes.mining_type.acronym') %>:
-    <%= text_field_tag nil, @mining_type.acronym, class: "form-control", disabled: true %>
-  </div>
-</form>
+      <div>
+        <strong><%= t('activerecord.attributes.mining_type.acronym') %>:</strong>
+        <%= @mining_type.acronym  %>
+      </div>
+    </div>
 
-<%= link_to "#{t('activerecord.attributes.mining_type.edit')}", edit_mining_type_path(@mining_type), class: "btn btn-primary" %>
-<%= link_to "#{t('activerecord.attributes.mining_type.back')}", mining_types_path, class: "btn btn-primary" %>
+    <div class="card-footer">
+      <%= link_to "#{t('activerecord.attributes.mining_type.edit')}", edit_mining_type_path(@mining_type), class: "btn btn-primary" %>
+      <%= link_to "#{t('activerecord.attributes.mining_type.back')}", mining_types_path, class: "btn btn-primary" %>
+    </div>
+  </div>
+</div>
