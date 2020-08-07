@@ -1,29 +1,34 @@
 <!--p id="notice"><%#= notice %></p-->
+<div class="card">
+  <div class="card-header">
+    <h1> <%= MiningType.model_name.human(count: @mining_types.count) %> </h1>
+  </div>
+  <div class="card-body">
+    <div class="table-responsive">
+      <table class="table table-hover">
+        <thead>
+          <tr>
+            <th> <%= t('activerecord.attributes.mining_type.description') %> </th>
+            <th> <%= t('activerecord.attributes.mining_type.acronym') %> </th>
+            <th colspan="3"></th>
+          </tr>
+        </thead>
 
-<h1> <%= MiningType.model_name.human(count: @mining_types.count) %> </h1>
-
-<table class="table table-hover">
-  <thead>
-    <tr>
-      <th> <%= t('activerecord.attributes.mining_type.description') %> </th>
-      <th> <%= t('activerecord.attributes.mining_type.acronym') %> </th>
-      <th colspan="3"></th>
-    </tr>
-  </thead>
-
-  <tbody>
-    <% @mining_types.each do |mining_type| %>
-      <tr>
-        <td><%= mining_type.description %></td>
-        <td><%= mining_type.acronym %></td>
-        <td><%= link_to t('activerecord.attributes.mining_type.show'), mining_type %></td>
-        <td><%= link_to t('activerecord.attributes.mining_type.edit'), edit_mining_type_path(mining_type) %></td>
-        <td><%= link_to t('activerecord.attributes.mining_type.destroy'), mining_type, method: :delete, data: { confirm: 'Are you sure?' } %></td>
-      </tr>
-    <% end %>
-  </tbody>
-</table>
-
-<br>
-
-<%= link_to "#{t('activerecord.attributes.mining_type.new_mining_type')}", new_mining_type_path, class: "btn btn-primary" %>
+        <tbody>
+          <% @mining_types.each do |mining_type| %>
+            <tr>
+              <td><%= mining_type.description %></td>
+              <td><%= mining_type.acronym %></td>
+              <td><%= link_to t('activerecord.attributes.mining_type.show'), mining_type %></td>
+              <td><%= link_to t('activerecord.attributes.mining_type.edit'), edit_mining_type_path(mining_type) %></td>
+              <td><%= link_to t('activerecord.attributes.mining_type.destroy'), mining_type, method: :delete, data: { confirm: 'Are you sure?' } %></td>
+            </tr>
+          <% end %>
+        </tbody>
+      </table>    
+    </div>
+  </div>
+  <div class="card-footer">
+    <%= link_to "#{t('activerecord.attributes.mining_type.new_mining_type')}", new_mining_type_path, class: "btn btn-primary" %>
+  </div>
+</div>

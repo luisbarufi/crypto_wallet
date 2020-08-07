@@ -1,5 +1,9 @@
-<h1><%= t('activerecord.attributes.coin.new_mining_type') %></h1>
-
-<%= render 'form', mining_type: @mining_type %>
-
-<%= link_to "#{t('activerecord.attributes.mining_type.back')}", mining_types_path, class: "btn btn-primary" %>
+<div class="card">
+  <div class="card-header">
+    <h1><%= t('activerecord.attributes.coin.new_mining_type') %></h1>  
+  </div>
+  <%= render 'form', mining_type: @mining_type %>
+  <div class="card-footer">
+    <%= link_to "#{t('activerecord.attributes.mining_type.back')}", mining_types_path, class: "btn btn-primary" %>
+  </div>
+</div>
