@@ -25,12 +25,12 @@ en:
         new_mining_type: New Mining Type
         helcome: Welcome!
         
-        coin:
-          <<: *commons
-          url_image: Image
-          mining_type: Mining Type
-          mining_type_id: Mining Type
-          editing_coin: Editing Coin
+      coin:
+        <<: *commons
+        url_image: Image
+        mining_type: Mining Type
+        mining_type_id: Mining Type
+        editing_coin: Editing Coin
         
       mining_type:
         <<: *commons
