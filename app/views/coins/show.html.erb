@@ -1,24 +1,34 @@
-<form>
-  <div class="form-group">
-    <%= label_tag nil, t('activerecord.attributes.coin.description') %>:
-    <%= text_field_tag nil, @coin.description, class: "form-control", disabled: true %>
-  </div>
+<div class="container-fluid">
+  <div class="card">
+    <div class="card-header">
+      <h1><%= t('activerecord.models.coin.one') %></h1>
+    </div>
+    <div class="card-body">
+      <div>
+        <strong><%= t('activerecord.attributes.coin.description') %>:</strong>
+        <%= @coin.description %>
+      </div>
 
-  <div class="form-group">
-    <%= label_tag nil,  t('activerecord.attributes.coin.acronym') %>:
-    <%= text_field_tag nil, @coin.acronym, class: "form-control", disabled: true %>
-  </div>
+      <div>
+        <strong><%= t('activerecord.attributes.coin.acronym') %>:</strong>
+        <%= @coin.acronym %>
+      </div>
 
-  <div class="form-group">
-    <%= label_tag nil, t('activerecord.attributes.coin.url_image') %>:
-    <%= text_field_tag nil, @coin.url_image, class: "form-control", disabled: true %>
-  </div>
+      <div>
+        <strong><%= t('activerecord.attributes.coin.url_image') %>:</strong>
+        <%= @coin.url_image %>
+      </div>
 
-  <div class="form-group">
-    <%= label_tag nil, t('activerecord.attributes.coin.mining_type') %>:
-    <%= text_field_tag nil, @coin.mining_type.description, class: "form-control", disabled: true %>
-  </div>
-</form>
+      <div>
+        <strong><%= t('activerecord.attributes.coin.mining_type') %>:</strong>
+        <%= @coin.mining_type.description %>
+      </div>
+    </div>
 
-<%= link_to "#{t('activerecord.attributes.attribute_commons.edit')}", edit_coin_path(@coin), class: "btn btn-primary" %>
-<%= link_to "#{t('activerecord.attributes.attribute_commons.back')}", coins_path, class: "btn btn-primary" %>
+    <div class="card-footer">
+      <%= link_to "#{t('activerecord.attributes.attribute_commons.edit')}", edit_coin_path(@coin), class: "btn btn-primary" %>
+      <%= link_to "#{t('activerecord.attributes.attribute_commons.back')}", coins_path, class: "btn btn-primary" %>
+    </div>
+  </div>
+</div>
+ 
